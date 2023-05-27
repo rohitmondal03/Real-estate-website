@@ -1,13 +1,26 @@
 /* NAVBAR */
 
 .nav_left {
-    @apply relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:content-['Estate.io'] hover:after:absolute hover:after:top-0 hover:after:left-0 hover:after:w-full hover:after:h-full;
+    @apply relative;
+}
+
+.nav_left:hover p {
+    @apply opacity-0 transition;
+}
+
+.nav_left::after {
+    @apply opacity-0 transition-opacity;
+}
+
+.nav_left:hover::after {
+    /* content: "Estate.io"; */
+    @apply absolute content-['Estate.io'] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 text-white text-4xl font-bold;
 }
 
 .nav_right ul .nav_list_items  {
-    @apply mx-6 text-xl;
+    @apply mx-6 text-xl cursor-pointer;
 }
 
 .nav_right ul button {
-    @apply border-2 p-2 cursor-pointer;
+    @apply border-2 p-2;
 }

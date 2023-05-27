@@ -1,3 +1,5 @@
+import React from "react"
+
 // ASSETS
 import instaLogo from "../../assets/instagram.png"
 import linkedInLogo from "../../assets/linkedin.png"
@@ -35,13 +37,13 @@ const Footer = () => {
         <footer
             className='footer fixed p-3 z-10 bottom-0 left-10 border-white rounded-xl'
         >
-            <div className='flex flex-col mb-8'>
+            <div className='flex flex-col mb-8 p-3'>
                 {logoImgArr.map((imgs) => (
                     <img 
                         src={imgs.src}
                         alt={imgs.alt}
                         key={imgs.id}
-                        className='h-8 w-8 my-3 hover:scale-110'
+                        className='h-8 w-8 my-3 transition hover:scale-125 cursor-pointer'
                     />
                 ))}
             </div>

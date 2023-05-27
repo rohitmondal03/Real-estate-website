@@ -1,3 +1,5 @@
+import React from "react"
+
 // STYLES
 import "./styles/Starter.css"
 
@@ -19,7 +21,7 @@ const Starter = () => {
             <Navbar />
 
 
-            <div>
+            <div className="starter_sec">
                 <div className='starter_bgImg -z-10'>
                     <motion.img
                         src={bgImg}
