@@ -1,0 +1,13 @@
+/* NAVBAR */
+
+.nav_left {
+    @apply relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:content-['Estate.io'] hover:after:absolute hover:after:top-0 hover:after:left-0 hover:after:w-full hover:after:h-full;
+}
+
+.nav_right ul .nav_list_items  {
+    @apply mx-6 text-xl;
+}
+
+.nav_right ul button {
+    @apply border-2 p-2 cursor-pointer;
+}
