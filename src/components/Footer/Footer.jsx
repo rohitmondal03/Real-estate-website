@@ -35,9 +35,9 @@ const Footer = () => {
 
     return (
         <footer
-            className='footer fixed p-3 z-10 bottom-0 left-10 border-white rounded-xl'
+            className='footer fixed p-3 z-10 bottom-0 border-white rounded-xl'
         >
-            <div className='flex flex-col mb-8 p-3'>
+            <div className='flex flex-col p-3'>
                 {logoImgArr.map((imgs) => (
                     <img 
                         src={imgs.src}

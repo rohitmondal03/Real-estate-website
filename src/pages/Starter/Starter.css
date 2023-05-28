@@ -1,0 +1,18 @@
+/* STARTER COMPONENT */
+
+.starter_main {
+    width: 100%;
+}
+
+.starter_bgImg img {
+    filter: brightness(50%);
+}
+
+.shadow_text {
+    background-image: linear-gradient(to right, #ffd500, #ff7700);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* text-shadow: 0px 0px 100px rgb(255, 211, 122); */
+}

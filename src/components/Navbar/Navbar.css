@@ -1,5 +1,9 @@
 /* NAVBAR */
 
+.nav{
+    width: 100%
+}
+
 .nav_left {
     @apply relative;
 }
@@ -13,8 +17,7 @@
 }
 
 .nav_left:hover::after {
-    /* content: "Estate.io"; */
-    @apply absolute content-['Estate.io'] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 text-white text-4xl font-bold;
+    @apply absolute content-['Estate.io'] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 text-white text-4xl font-bold cursor-pointer;
 }
 
 .nav_right ul .nav_list_items  {
@@ -22,5 +25,5 @@
 }
 
 .nav_right ul button {
-    @apply border-2 p-2;
+    @apply border-2 rounded-lg py-2 px-3;
 }
