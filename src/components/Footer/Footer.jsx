@@ -1,7 +1,7 @@
 import React from "react"
 
 // ASSETS
-import instaLogo from "../../assets/instagram.png"
+import githubLogo from "../../assets/github.png"
 import linkedInLogo from "../../assets/linkedin.png"
 import twitterLogo from "../../assets/twitter.png"
 
@@ -13,7 +13,7 @@ const Footer = () => {
 
         {
             id: 1,
-            src: instaLogo,
+            src: githubLogo,
             alt: "social logo"
 
         },
@@ -35,7 +35,7 @@ const Footer = () => {
 
     return (
         <footer
-            className='footer fixed p-3 z-10 bottom-0 border-white rounded-xl'
+            className='footer fixed px-3 py-5 z-10 bottom-0 border-white rounded-xl'
         >
             <div className='flex flex-col p-3'>
                 {logoImgArr.map((imgs) => (
@@ -43,7 +43,7 @@ const Footer = () => {
                         src={imgs.src}
                         alt={imgs.alt}
                         key={imgs.id}
-                        className='h-8 w-8 my-3 transition hover:scale-125 cursor-pointer'
+                        className='h-7 w-7 my-4 transition hover:scale-125 cursor-pointer'
                     />
                 ))}
             </div>

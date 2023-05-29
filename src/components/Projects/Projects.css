@@ -1,0 +1,3 @@
+.projects_collection img {
+    @apply relative rounded-sm border-2;
+}

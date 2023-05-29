@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Playfair:wght@500&display=swap');
 
-.features div {
-    /* @apply shadow-2xl; */
-}
-
 .features div h2 {
     @apply text-3xl text-center;
     /* font-family: 'Playfair', serif; */

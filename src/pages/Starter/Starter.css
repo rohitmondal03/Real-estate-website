@@ -9,10 +9,9 @@
 }
 
 .shadow_text {
-    background-image: linear-gradient(to right, #ffd500, #ff7700);
+    background-image: linear-gradient(to right, #ffcf21, #ff5500);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    /* text-shadow: 0px 0px 100px rgb(255, 211, 122); */
 }

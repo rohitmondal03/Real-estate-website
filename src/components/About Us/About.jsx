@@ -11,7 +11,7 @@ import homeImg from "../../assets/services_img.jpg"
 
 const About = () => {
     return (
-        <div className='about_us px-3 py-5 flex flex-row items-center justify-stretch border-2'>
+        <div className='about_us px-3 py-5 flex flex-row items-center justify-stretch border rounded-md'>
             <div className='about_us_left'>
                 <img
                     src={homeImg}
@@ -19,7 +19,7 @@ const About = () => {
                 />
             </div>
 
-            <div className='about_us_right text-zinc-300'>
+            <div className='about_us_right'>
                 <h1 className='text-6xl'>About Us</h1>
 
                 <p className='text-3xl font-bold my-7 text-amber-600'>Newel Residential Remodeling</p>

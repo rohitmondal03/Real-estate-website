@@ -6,7 +6,7 @@ import "./Features.css"
 
 const Features = () => {
   return (
-    <div className='features flex flex-row justify-between items-center py-32 px-5 my-1 border-2'>
+    <div className='features flex flex-row justify-between items-center py-32 px-5 my-5 border rounded-md'>
         <div>
             <h2>Vast <br/> Experience</h2>
         </div>

@@ -18,6 +18,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import About from "../../components/About Us/About"
 import Services from "../../components/Services/Services"
 import Features from "../../components/Features/Features"
+import Projects from "../../components/Projects/Projects";
 
 
 const Starter = () => {
@@ -52,7 +53,7 @@ const Starter = () => {
                         animate={{ y: '0', opacity: 1 }}
                     >
                         <motion.h1
-                            className='shadow_text text-8xl font-bold text-center text-yellow-400'
+                            className='shadow_text text-8xl font-bold text-center'
                         >
                             Welcome to Estate.io
                         </motion.h1>
@@ -101,6 +102,9 @@ const Starter = () => {
 
                 {/* SERVICES SECTION */}
                 <Services />
+
+                {/* PROJECTS SECTION */}
+                <Projects />
             </section>
 
 
