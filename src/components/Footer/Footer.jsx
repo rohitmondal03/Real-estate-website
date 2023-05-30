@@ -43,7 +43,7 @@ const Footer = () => {
                         src={imgs.src}
                         alt={imgs.alt}
                         key={imgs.id}
-                        className='h-7 w-7 my-4 transition hover:scale-125 cursor-pointer'
+                        className='h-7 w-7 my-4 transition duration-300 ease-out hover:scale-125 cursor-pointer'
                     />
                 ))}
             </div>
