@@ -21,9 +21,9 @@
 }
 
 .nav_right ul .nav_list_items  {
-    @apply mx-6 text-xl cursor-pointer;
+    @apply mx-6 text-xl cursor-pointer transition duration-300 hover:scale-110;
 }
 
 .nav_right ul button {
-    @apply border-2 rounded-lg py-2 px-3;
+    @apply relative border-2 rounded-lg py-2 px-3 overflow-hidden ease-out after:absolute after:content-['Call_Now'] after:flex after:items-center after:justify-center after:h-full after:w-full after:top-0 after:-left-full after:bg-black transition after:duration-500 hover:after:left-0;
 }

@@ -11,18 +11,18 @@ import { motion } from "framer-motion"
 const Navbar = () => {
   return (
     <motion.nav
-      className='nav absolute bg-transparent z-10 flex flex-row items-center justify-between px-8 py-5'
-      initial={{ y: '-200px', opacity: 0 }}
-      animate={{ y: '0px', opacity: 1, transition: { duration: 1.5 } }}
+      className='nav absolute bg-transparent z-10 flex flex-row items-center justify-between px-8 py-5 text-white'
+      initial={{ y: '-50px', opacity: 0 }}
+      animate={{ y: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } }}
       exit={{ opacity: 0 }}
     >
-      <div className='nav_left text-2xl text-white'>
+      <div className='nav_left text-2xl'>
         <p className='cursor-pointer'>Residential</p>
         <p className=''>Remodeled</p>
         <p className=''>with...</p>
       </div>
 
-      <div className='nav_right text-zinc-200'>
+      <div className='nav_right'>
         <ul className='flex flex-row items-center uppercase'>
           <Link><li className='nav_list_items'>Home</li></Link>
           <Link><li className='nav_list_items'>Services</li></Link>

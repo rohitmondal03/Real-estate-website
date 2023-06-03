@@ -4,6 +4,15 @@ import React from 'react'
 import serviceImg from "../../assets/worker1.jpg"
 
 
+// FRAMER-MOTION
+import { motion } from 'framer-motion'
+
+
+// MANTINE UI
+import { Button } from '@mantine/core'
+
+
+
 const Services = () => {
     return (
         <div className='services flex flex-reverse items-center justify-evenly px-3 py-5 border rounded-md'>
@@ -25,7 +34,15 @@ const Services = () => {
                     <li>Flooring</li>
                 </ul>
 
-                <button className='text-xl mt-10 translate-x-5 py-4 px-10 border bg-teal-600'>More Info</button>
+                {/* <button className='text-xl mt-10 translate-x-5 py-4 px-10 border bg-teal-600'>More Info</button> */}
+
+                <Button
+                    color="cyan"
+                    size="md"
+                    className='mt-10 translate-x-5 border bg-sky-600 transition duration-300 hover:scale-105 active:scale-90'
+                >
+                    More Info
+                </Button>
             </div>
         </div>
     )

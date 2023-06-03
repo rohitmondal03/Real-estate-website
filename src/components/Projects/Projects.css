@@ -1,8 +1,10 @@
 .projects_collection img {
-    @apply border-2 cursor-pointer shadow-2xl shadow-zinc-800 transition-all duration-300 ease-out;
+    @apply border-2 cursor-pointer transition-all duration-300 ease-out;
+
+    box-shadow: 10px 10px 20px black;
 }
 
 .projects_collection img:hover {
-    box-shadow: 25px 30px 50px black;
+    box-shadow: 25px 25px 40px black;
     transform: translateX(-2px);
 }

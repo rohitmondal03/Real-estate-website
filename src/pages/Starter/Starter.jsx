@@ -7,7 +7,7 @@ import TypeIt from "typeit-react";
 import "./Starter.css"
 
 // FRAMER
-import { motion } from 'framer-motion'
+import { easeIn, easeOut, motion } from 'framer-motion'
 
 // ASSETS
 import bgImg from "../../assets/starter_img.jpg"
@@ -19,6 +19,7 @@ import About from "../../components/About Us/About"
 import Services from "../../components/Services/Services"
 import Features from "../../components/Features/Features"
 import Projects from "../../components/Projects/Projects";
+import Contact from "../../components/Contact/Contact";
 
 
 const Starter = () => {
@@ -37,6 +38,9 @@ const Starter = () => {
                     <motion.img
                         src={bgImg}
                         className='relative h-screen w-screen'
+                        initial={{ opacity: 0 }}
+                        transition={{ duration: 0.5, ease: easeOut }}
+                        animate={{ opacity: 1 }}
                     />
                 </div>
 
@@ -48,23 +52,26 @@ const Starter = () => {
                     {/* STARTER TEXT */}
                     <motion.div
                         className='starter_text'
-                        initial={{ y: '150px', opacity: 0 }}
-                        transition={{ duration: 1, delay: 1 }}
-                        animate={{ y: '0', opacity: 1 }}
                     >
                         <motion.h1
-                            className='shadow_text text-8xl font-bold text-center'
+                            className='shadow_text text-8xl font-bold text-center text-orange-400'
+                            initial={{ y: '100px', opacity: 0 }}
+                            transition={{ duration: 2, delay: 1 }}
+                            animate={{ y: '0', opacity: 1 }}
                         >
                             Welcome to Estate.io
                         </motion.h1>
 
-                        <p
-                            className='my-10 text-3xl text-center'
+                        <motion.p
+                            className='my-5 text-3xl text-center'
                             ref={smallheadingRef}
+                            initial={{ y: '100px', opacity: 0 }}
+                            transition={{ duration: 2, delay: 1.5 }}
+                            animate={{ y: '0', opacity: 1 }}
                         >
                             {/* <TypeIt>Recreating Dream homes that last...</TypeIt> */}
-                            <TypeIt
-                                options={{ 
+                            {/* <TypeIt
+                                options={{
                                     speed: 200,
                                 }}
                                 getBeforeInit={(instance) => {
@@ -82,8 +89,9 @@ const Starter = () => {
                                     // Remember to return it!
                                     return instance;
                                 }}
-                            />
-                        </p>
+                            /> */}
+                            Recreating Dream homes that last...
+                        </motion.p>
 
                     </motion.div>
 
@@ -92,7 +100,7 @@ const Starter = () => {
 
 
             <section
-                className='bg-pink-900 px-20 py-20 text-white'
+                className='bg-pink-900 px-20 pt-20 pb-1 text-white'
             >
                 {/* ABOUT SECTION */}
                 <About />
@@ -106,6 +114,10 @@ const Starter = () => {
                 {/* PROJECTS SECTION */}
                 <Projects />
             </section>
+
+
+            {/* CONTACT SECTION */}
+            <Contact />
 
 
             {/* FOOTER */}
