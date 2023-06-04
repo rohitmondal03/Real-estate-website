@@ -1,0 +1,23 @@
+.contact_address {
+    @apply rounded-xl;
+}
+
+.contact_address div {
+    @apply my-7;
+}
+
+.contact_address div h4 {
+    @apply text-xl text-zinc-700 font-semibold;
+}
+
+.contact_address div p {
+    @apply text-lg;
+}
+
+.contact_address div .first-child {
+    @apply pt-3;
+}
+
+.contact_address div p:last-child {
+    @apply pb-3;
+}
